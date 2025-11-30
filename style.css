@@ -29,7 +29,7 @@ body {
 .navbar-icon img {
   height: 40px;
   width: 40px;
-  image-rendering: high-quality;
+  image-rendering: smooth;
 
   filter:
     drop-shadow(-1px -1px 0 black)
@@ -99,6 +99,6 @@ body {
     drop-shadow(-1px  1px 0 black)
     drop-shadow( 1px  1px 0 black);
 
-  image-rendering: high-quality;
+  image-rendering: smooth;
 }
 
