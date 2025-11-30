@@ -1,17 +1,76 @@
+/* Apply your font to entire site */
 body {
-  font-family: Futura;
-  text-align: center;
-  padding: 50px;
-  background-color: #53835c;
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Libertinus Mono", monospace;
+
+  /* Full-page tiling background */
+  background-image: url("bg-tile.png");
+  background-repeat: repeat;
 }
 
-header {
-  margin-bottom: 50px;
+/* NAVBAR AREA ------------------------------------------------ */ 
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+
+  /* Tiled navbar background */
+  background-image: url("navtile.png");
+  background-repeat: repeat;
+  background-size: auto;
 }
 
-footer {
-  margin-top: 50px;
-  font-size: 0.8em;
-  color: #777;
+/* Left icon */
+.navbar-icon img {
+  height: 40px;
+  width: auto;
+  image-rendering: pixelated;  /* optional, nice for pixel art */
+}
+
+/* All navbar links */
+.navbar-links {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-links a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+  /* black outline via text-shadow */
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.navbar-links a:hover {
+  opacity: 0.8;
+}
+
+.divider {
+  color: white;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* CONTENT BOX ------------------------------------------------ */
+.content-box {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #d8d8d8;      /* light grey */
+  color: black;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
